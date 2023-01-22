@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 王 永泰, 123, LIC=47GU5-G2MF7-306NC-7214A-XMR39-7I9G4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  F:\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\dell\Desktop\项目\stm32 1\oled 显示键盘控制亮灯时间\USER\EXTI.uvprojx
+Project File Date:  04/01/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'F:\MDK\ARM\ARMCC\Bin'
+Build target 'EXTI'
+compiling key.c...
+..\HARDWARE\KEY\key.h(41): warning:  #1295-D: Deprecated declaration abc_read - give arg types
+  u16 *abc_read();
+..\HARDWARE\KEY\key.h(42): warning:  #1295-D: Deprecated declaration sun1_read - give arg types
+  int sun1_read();
+..\HARDWARE\KEY\key.c(59): warning:  #1295-D: Deprecated declaration abd_read - give arg types
+  u16 * abd_read();
+..\HARDWARE\KEY\key.c: 3 warnings, 0 errors
+compiling main.c...
+..\HARDWARE\KEY\key.h(41): warning:  #1295-D: Deprecated declaration abc_read - give arg types
+  u16 *abc_read();
+..\HARDWARE\KEY\key.h(42): warning:  #1295-D: Deprecated declaration sun1_read - give arg types
+  int sun1_read();
+main.c(68): warning:  #69-D: integer conversion resulted in truncation
+  	TIM3_Int_Init(89999,2);  
+main.c(82): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			OLED_ShowString(10,0,abd_xiugai(abc_read()),16,1);
+main.c(84): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			OLED_ShowString(10,0,sun1_read_xiu_acill(sun1_read()),16,1);
+main.c(63): warning:  #177-D: variable "is_anxia"  was declared but never referenced
+  	u8 is_anxia = 0;
+main.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=12276 RO-data=8032 RW-data=72 ZI-data=3016  
+FromELF: creating hex file...
+"..\OBJ\EXIT.axf" - 0 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_EXTI
+  F:\MDK\packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
